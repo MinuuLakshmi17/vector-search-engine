@@ -71,7 +71,7 @@ flowchart TD
     API --> Store[Atomic JSON persistence<br/>fsync + rename<br/>validated on load]
     Bench[Benchmark harness] --> Core
     Bench --> Exact[Brute-force baseline]
-    Exact --> Metrics[recall@k + p50/p95/p99<br/>latency + QPS]
+    Exact --> Metrics[recall at k + p50/p95/p99<br/>latency + QPS]
     CLI[CLI inspector] --> Store
 ```
 
